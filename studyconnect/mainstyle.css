@@ -1,0 +1,119 @@
+html{
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+	height: 100%;
+}
+body{
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	height: 100%;
+}
+#page{
+	width: 100%;
+	height: 100%;
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+}
+
+/*Form css*/
+	#headerForm input{
+		box-sizing: border-box;
+		margin-top: 20px;
+		margin-right: 20px;
+	}
+	#signUp{
+		margin: auto;
+		margin-top: 50px;
+		padding-top: 30px;
+		padding-bottom: 30px;
+		width: 75%;
+		border: 2px solid black;
+		border-radius: 5px;
+	}
+	#signUp input{
+		margin-bottom: 20px;
+	}
+	input{
+		border: 1px solid black;
+		border-radius: 2px;
+	}
+	fieldset{
+		border: 0px;
+	}
+
+
+/* Uniform Header on all pages */
+	#header{
+		background-color: red;
+		width: 100%;
+		height: 75px; 				/*HEIGHT OF HEADER */
+		margin: 0 0 0 0;
+		position: fixed;
+		top: 0;
+	}
+	#header img{ /*Logo */
+		margin: 0 0 0 0;
+		width: 30%;
+		height: 100%;
+		float: left;
+		clear: left;
+	}
+	#headerForm{ /*Div for header form*/
+		margin: 0 0 0 0;
+		height: 100%;
+		float: right;
+		clear: right;
+	}	
+
+	.inputLogin{
+		display: inline;
+	}
+
+
+
+/* Main content goes in here */
+	#mainContent{
+		margin-top: 75px;
+		margin-bottom: 0;
+		height: 100%;
+	}
+	#mainLeft{
+		float:left;
+		clear: left;
+		margin-left: 2%;
+		width: 45%;
+		height: 100%;
+		text-align: center;
+	}
+	#mainRight{
+		float: right;
+		clear: right;
+		margin-right: 2%;
+		width: 45%;
+		height: 100%;
+	}
+	#mainRight form{
+		text-align: center;
+	}
+
+/* Footer same on all pages */
+	#footer-index{
+		background-color: red;
+		margin: 0 0 0 0;
+		width: 100%;
+		height: 50px; 				/*HEIGHT OF FOOTER*/
+		text-align: center;
+		position: fixed;
+		bottom: 0;
+	}
+
+	#footer-index li{
+		display: inline;
+		list-style: none;
+		text-transform: uppercase;
+		font-weight: bold;
+		margin-left: 2em;
+		margin-right: 2em;
+
+	}
+
