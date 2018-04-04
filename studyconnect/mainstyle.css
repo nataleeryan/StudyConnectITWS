@@ -114,36 +114,237 @@ fieldset{
 
 /*Main display for groups on homepage*/
 #groupsDisplay{
-	background-color: lavender;
-	width: 60%;
+	width: 59%;
 	height: 2000px;					/*HEIGHT OF GROUP DISPLAY*/
-	margin-left: 30%;
+	margin-right: 10%;
 	overflow: auto;
+	float: right;
+}
+#groupsDisplay h1{
+	width: 30%;
+	display: inline;
+	margin: 0 0 0 0;
+	float: left;
+	clear: left;
 }
 
-/*Displays info about selected class*/
-#classDisplay{
-	background-color: cornsilk;
-	width: 20%;
-	height: 400px;						
-	margin-left: 10%;
-	position: fixed;
-	top: 1;
+/*=======================================================================*/
+/*Filter buttons*/
+
+#filterContainer{
+	width:96%;
+	height: 80px;
+	margin-right: 2%;
+	margin-left: 2%;
+	margin-top: 20px;
 }
-#classDisplay h1{
-	margin: 5px 0 0 0;
+#filterButtons{
+	float: left;
+	width: 65%;
+	display: inline;
 	text-align: center;
 }
 
-/*Main Banner to display class information*/
+#fTopL{
+	background-color: limegreen;
+	width: 45%;
+	height: 35px;
+	float: left;
+	clear: left;
+	display: inline;
+}
+#fTopR{
+	background-color: lightskyblue;
+	width: 45%;
+	height: 35px;
+	float: right;
+	clear: right;
+	display: inline;
+}
+#fBottomL{
+	border-top: 1px solid black;
+	background-color: palevioletred;
+	width: 45%;
+	height: 35px;
+	float: left;
+	clear: left;
+	display: inline;
+}
+#fBottomR{
+	border-top: 1px solid black;
+	background-color: lightskyblue;
+	width: 45%;
+	height: 35px;
+	float: right;
+	clear: right;
+	display: inline;
+}
+
+/*=======================================================================*/
+
+/*Class Box*/
+#classDisplay{
+	background-color: cornsilk;
+	border-radius: 10px;
+	width: 20%;						
+	margin-left: 10%;
+	margin-top: 20px;
+	position: fixed;
+	top: 1;
+}
+#act-className{
+	width: 80%;
+	margin:auto;
+	margin-top: 5px;
+	text-align: center;
+	border-bottom: 2px solid black;
+}
+#act-classDesc{
+	width: 80%;
+	text-align: center;
+	margin: auto;
+	margin-top:5px;
+	margin-bottom: 5px;
+}
+.classBoxButton{
+	width:80%;
+	height:30px;
+	text-align: center;
+	font-size: 100%;
+	margin: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	display: block;
+}
+#groupSearch{
+	width: 80%;
+	height: 30px;
+	margin: auto;
+}
+#searchInput{
+	width: 70%;
+	height: 100%;
+}
+#searchButton{
+	width: 25%;
+	height: 100%;
+}
+
+
+/*=======================================================================*/
+
+/*Class Banner to display class information*/
 #classBanner{
 	background-color: pink;
-	width:80%;
+	width:100%;
 	height: 50px;
-	margin-right: 10%;
-	margin-left: 10%;
 	position: fixed;
 	top: 75px;
+}
+
+#addClassBig{
+	width: 100%;
+	text-align: center;
+}
+#addClassBig h1{
+	margin: 0 0 0 0;
+	font-size: 40px;
+}
+#addClassSmall{
+	width:5%;
+	height: 100%;
+	float:right;
+	clear:right;
+	text-align: center;
+}
+#addClassSmall h1{
+	margin: 0 0 0 0;
+	font-size: 40px;
+}
+.classSelector{
+	/*Width set dynamically*/
+	height: 100%;
+	float:left;
+}
+
+/*=======================================================================*/
+/*GROUP BOX - dynamically created*/
+/*Individual group displayed group list*/
+.group{
+	background-color: lightskyblue;
+	width: 96%;
+	height: 250px;
+	margin-right: 2%;
+	margin-left: 2%;
+	margin-top: 20px;
+}
+
+.groupBanner{
+	background-color: limegreen;
+	width:100%;
+	height:50px;						/*GROUP BANNER HEIGHT*/
+}
+.groupTitle{
+	margin: 5px 0 0 1%;
+	width: 75%;
+	height: 45%;
+	float: left;
+	clear: left;
+}
+.groupRole{
+	margin: 5px 1% 0 0;
+	width: 20%;
+	height: 50%;
+	float:right;
+	clear:right;
+	text-align: right;
+}
+.groupCreator{
+	margin: 0 0 0 1%;
+	width:75%;
+	height: 50%;
+	float:left;
+	clear:left;
+}
+.groupDesc{
+	width: 75%;
+	height: 140px;
+	float: left;
+	clear: left;
+}
+.groupDesc p{
+	margin: 10px 10px 10px 10px;
+}
+.groupDate{
+	width: 75%;
+	height: 60px;
+	float: left;
+	clear:left;
+}
+.groupDate p{
+	margin: 0 0 10px 10px;
+}
+.groupButtons{
+	width: 25%;
+	height: 100px;
+	float:right;
+	clear:right;
+	text-align: center;
+}
+.groupButtons button{
+	display: block;
+	width: 60%;
+	height: 30px;
+	margin: 10px 20px 0 0;
+	float:right;
+	clear: right;
+}
+.groupFiller{
+	/*Serves only to fill whitespace, no content*/
+	width: 25%;
+	height: 100px;
+	float: right;
+	clear: right;
 }
 
 /*=======================================================================*/
