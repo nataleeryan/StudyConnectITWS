@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<title>StudyConnect - Classes</title>
+	<title>StudyConnect - Groups</title>
 	<link rel="icon" href="icon.png">
 	<link rel="stylesheet" type="text/css" href="mainstyle.css">
 </head>
@@ -50,6 +50,7 @@
 
 		<!-- Main body of page -->
 		<div id="mainContent-homepage">
+
 			<!-- Displays info about the selected class-->
 			<div id="classDisplay">
 				<h1 id="act-className">ITWS 1100</h1>
@@ -57,20 +58,61 @@
 
 				<form id="groupSearch">
 					<input type="text" placeholder="Search Groups" id="searchInput" name="searchInput" />
-					<input type="submit" name="searchButton" id="searchButton">
+					<input type="submit" name="searchButton" id="searchButton" value="Search">
 				</form>
 
 				<button class="classBoxButton" onclick="">View Classmates</button>
 				<button class="classBoxButton" onclick="">View Groups Feed</button>
 				<button class="classBoxButton" onclick="">Create New Group</button>
 				<button class="classBoxButton" onclick="">Your Groups</button>
-
 			</div>
-
-
 
 			<!--Displays the groups of selected class-->
 			<div id="groupsDisplay">
+
+				<!--Div to create a group, will show up upon button press-->
+				<div id="createGroup">
+					<h1>Creating a New Group</h1>
+					<h3>Fill out all fields. Tips for creation: include details of location, time, content and purpose of your group.</h3>
+					<form>
+					<fieldset>
+					<div id="createLeft">
+						<input type="text" placeholder="Group Title" name="createTitle" id="createTitle">
+						<input type="text" placeholder="Meeting Location" name="createLocation" id="createLocation">
+						<input type="text" placeholder="Day of Meeting" name="createDate" id="createDate">
+						<div id="createTime">
+							<input type="text" placeholder="Time START" name="createStart" id="createStart">
+							<select id="startTOD">
+								<option value="AM">AM</option>
+								<option value="PM">PM</option>
+							</select>
+							<input type="text" placeholder="Time END" name="createEnd" id="createEnd">
+							<select id="endTOD">
+								<option value="AM">AM</option>
+								<option value="PM">PM</option>
+							</select>
+						</div>
+						<textarea id="createDesc" name="createDesc" placeholder="Brief Description" maxlength="500" rows="4" cols="50"></textarea>
+					</div>
+
+					<!--Role select and submit button-->
+					<div id="createRight">
+						<div class="radio">
+							<input type="radio" name="createRole" id="createHomework">
+							<div id="studyDiv" >Studying</div>
+						</div>
+
+						<div class="radio">
+							<input type="radio" name="createRole" id="createStudy">
+							<div id="homeDiv" >Homework</div>
+						</div>
+
+						<input type="submit" name="createButton" id="createButton" value="Create Group">
+					</div>
+					</fieldset>
+					</form>
+				</div>
+
 				<!--Filter groups section
 					onclick attributes in each div can be added with JS
 				-->
@@ -90,7 +132,7 @@
 					<div class="groupBanner">
 						<h3 class="groupTitle">Studying for Test 2</h3>
 						<h3 class="groupRole">Studying</h3>
-						<p class="groupCreator">Started by StudentName</p>
+						<p class="groupOwner">Started by StudentName</p>
 					</div>
 
 					<div class="groupDesc">
