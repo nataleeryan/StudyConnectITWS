@@ -469,6 +469,74 @@ fieldset{
 }
 
 /*=======================================================================*/
+/*Profile page*/
+#profileInfo{
+	width: 40%;
+	height: 100%;
+	margin: 20px 0 0 10%;
+	float:left;
+	clear:left;
+}
+.profileSection{
+	width: 100%;
+	height: ;
+	display: block;
+}
+.profileSection h1{
+	margin: 0 0 0 0;
+	display: inline;
+}
+.profileSection h3{
+	display: inline;
+	width: 30%;
+}
+#profileInfoEdit{
+	margin: 0 0 0 0;
+	display: inline;
+}
+#profileName{
+	display: inline;
+	width: 70%;
+}
+#profileMajor{
+	display: inline;
+	width: 70%;
+}
+#profileEmail{
+	display: inline;
+	width: 70%;
+}
+#profileAbout{
+	display: inline;
+	width: 70%;
+}
+
+#profileClasses{
+	width: 40%;
+	height: 100%;
+	margin: 20px 10% 0 0;
+	float:right;
+	clear:right;
+}
+.profileClass{
+	width: 98%;
+	height: 70px;
+	margin: 0 0 0 2%;
+}
+.profileClass h3{
+	width: ;
+	height: ;
+	margin: 0 0 0 0;
+}
+.profileClassButton{
+
+}
+#profileClassesEdit{
+	display: inline;
+}
+
+
+/*=======================================================================*/
 
 /* Footer same on all pages */
 #footer-index{
