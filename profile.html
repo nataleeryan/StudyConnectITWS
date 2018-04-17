@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!--Student name should be set in title-->
+	<title>StudyConnect - Profile</title>
+	<link rel="icon" href="icon.png">
+	<link rel="stylesheet" type="text/css" href="mainstyle.css">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+</head>
+
+<!--Main landing page, will serve as the login/sign-up page-->
+<body>
+	<div id="page">
+		<!--Header-->
+		<div id="header">
+			<!--Logo-->
+			<img src="logo.png" alt="StudyConnect Logo" >
+
+			<!-- Profile and log out form -->
+			<div id="headerForm">
+				<form action="profile.html" class="headerButtons">
+					<a href="profile.html"><button class="btn" type="button">Profile</button></a>
+				</form>
+
+				<form action="index.html" class="headerButtons">
+				<fieldset class="headerButtons">
+					<input type="submit" value="Log Out" id="logout" name="logout"/>
+				</fieldset>
+				</form>
+			</div>
+		</div>
+
+		<!-- Main body of page -->
+		<div id="mainContent">
+			<!--Left side of the profile containing student info-->
+			<div id="profileInfo">
+				<!--Profile header and edit button-->
+				<div class="profileSection">
+				<h1>PROFILE</h1>
+				<button id="profileInfoEdit">EDIT</button>
+				</div>
+
+				<!--Student name-->
+				<div class="profileSection">
+				<h3 id="profileName">Student Name</h3>
+				</div>
+
+				<!--Major-->
+				<div class="profileSection">
+				<h3>Major</h3>
+				<p id="profileMajor">ITWS</p>
+				</div>
+
+				<!--Contact info-->
+				<div class="profileSection">
+				<h3>Preferred Contact</h3>
+				<p id="profileEmail">email@rpi.edu</p>
+				</div>
+
+				<!--About student-->
+				<div class="profileSection">
+				<h3>About</h3>
+				<p id="profileAbout">I like studying in the the union with others.</p>
+				</div>
+
+			</div>
+			<!--Right side of the profile containing class information-->
+			<div id="profileClasses">
+				<!--Courses Button and header-->
+				<div class="profileSection">
+				<h1>COURSES</h1>
+				<button id="profileClassesEdit">EDIT</button>
+				</div>
+
+				<!--Courses with their class feed button, dynamically created using templates here-->
+				<div class="profileClass">
+				<h3>ITWS 1100</h3>
+				<button class="profileClassButton">View Class Feed</button>
+				</div>
+
+				<div class="profileClass">
+				<h3>BIOL 1010</h3>
+				<button class="profileClassButton">View Class Feed</button>
+				</div>
+
+				<div class="profileClass">
+				<h3>MATH 2010</h3>
+				<button class="profileClassButton">View Class Feed</button>
+				</div>
+			</div>
+		</div>
+
+
+		<!--Footer same on all pages-->
+		<div id="footer-index">
+			<ul>
+				<li>ITWS 1100 - Spring 2018 - Natalee Ryan - Will Eiref - Chris Pence</li>
+			</ul>
+		</div>
+	</div>
+</body>
+
+</html>
