@@ -5,6 +5,7 @@
 	<title>StudyConnect - Groups</title>
 	<link rel="icon" href="icon.png">
 	<link rel="stylesheet" type="text/css" href="mainstyle.css">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
 </head>
 
 <!--Main landing page, will serve as the login/sign-up page-->
@@ -13,14 +14,12 @@
 		<!--Header-->
 		<div id="header">
 			<!--Logo-->
-			<img src="fillerlogo.png" alt="StudyConnect Logo" >
-			
+			<img src="logo.png" alt="StudyConnect Logo" >
+
 			<!-- Profile and log out form -->
 			<div id="headerForm">
 				<form action="profile.html" class="headerButtons">
-				<fieldset class="headerButtons">
-					<input type="submit" value="Profile" id="profile" name="profile" />
-				</fieldset>
+					<a href="profile.html"><button class="btn" type="button">Profile</button></a>
 				</form>
 
 				<form action="index.html" class="headerButtons">
@@ -35,7 +34,7 @@
 		<!--Div to display list of classes-->
 		<div id="classBanner">
 			<!--If numClasses == 0, display this-->
-			<div id="addClassBig" onclick=""><h1>Click to add courses +</h1></div>
+			<div id="addClassBig" onclick=""><h1>CLICK TO ADD COURSES +</h1></div>
 			<!--If numClasses != 0, display this-->
 				<!--
 					Class selectors will be dyamically created and will display the BIOL 1010 information, they must be dynamically sized as well. The whole banner has a max width of 95% with the (addClassSmall) button active.
@@ -73,7 +72,7 @@
 				<!--Div to create a group, will show up upon button press-->
 				<div id="createGroup">
 					<h1>Creating a New Group</h1>
-					<h3>Fill out all fields. Tips for creation: include details of location, time, content and purpose of your group.</h3>
+					<h3><br><br>Fill out all fields. Tips for creation: include details of location, time, content and purpose of your group.</h3>
 					<form>
 					<fieldset>
 					<div id="createLeft">
