@@ -9,6 +9,7 @@ body{
 	height: 100%;
 	font-family: 'Source Sans Pro', sans-serif;
 	background-color: rgba(216, 241, 255, 0.8);
+
 }
 #page{
 	width: 100%;
@@ -122,7 +123,7 @@ input#create {
 	margin-top: 75px;
 	margin-bottom: 0;
 	display: block;
-	overflow: auto;
+	overflow-x: hidden;
 }
 #mainContent-homepage{
 	margin-top: 125px;
