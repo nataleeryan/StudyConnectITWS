@@ -6,6 +6,8 @@
 	<link rel="icon" href="icon.png">
 	<link rel="stylesheet" type="text/css" href="mainstyle.css">
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <script type="text/javascript" src="resources/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="display.js"></script>
 </head>
 
 <!--Main landing page, will serve as the login/sign-up page-->
@@ -35,6 +37,7 @@
 		<!--Div to display list of classes-->
 		<div id="classBanner">
 			<!--If numClasses == 0, display this-->
+			  <div id="project"></div>
 			<div id="addClassBig" onclick=""><h1>CLICK TO ADD COURSES +</h1></div>
 			<!--If numClasses != 0, display this-->
 				<!--
@@ -65,6 +68,8 @@
 				<button class="classBoxButton" onclick="">View Groups Feed</button>
 				<button class="classBoxButton" onclick="">Create New Group</button>
 				<button class="classBoxButton" onclick="">Your Groups</button>
+				<button id="button" onclick="foo()">click me</button>
+
 			</div>
 
 			<!--Displays the groups of selected class-->
@@ -150,7 +155,6 @@
 				</div>
 			</div>
 		</div>
-
 
 		<!--Footer same on all pages-->
 		<div id="footer">

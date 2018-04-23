@@ -1,5 +1,6 @@
-$(document).ready(function() {
-    $.ajax({
+function foo(){
+
+   $.ajax({
       type: "GET",
       url: "classes.json",
       dataType: "json",
@@ -9,9 +10,9 @@ $(document).ready(function() {
           output += '<h2>' + classes.type + '</h2>';
           output += '<p>';
         });
-        $("#project").html(output);
+        $("#button").html(output);
       }, error: function(msg) {
         alert("There was a problem: " + msg.status + " " + msg.statusText);
       }
    });
-});
+}

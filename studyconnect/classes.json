@@ -2,13 +2,16 @@
  "classes":
  [
 	 {
-	 	"type": "Biology"
+	 	"type": "Biology",
+	 	"description": "Description: Learning how cellular systems work"
 	 },
 	 {
-	 	"type": "Computer Science"
+	 	"type": "Computer Science",
+	 	"description": "Description: Learning how to use computers"
 	 },
 	 {
-	 	"type": "Engineering"
+	 	"type": "Engineering",
+	 	"description": "Learning how to capitalize on material advancements"
 	 }
  ]
 
