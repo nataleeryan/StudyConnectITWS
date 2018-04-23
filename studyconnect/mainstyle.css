@@ -314,6 +314,51 @@ input#create {
 	height: 100%;
 	float:left;
 }
+/*=======================================================================*/
+/* Navigation bar style */
+ul.nav {
+	width: 100%;
+	min-width: 800px;
+	margin: 0 auto;
+	padding: 0;
+	list-style: none;
+	text-align: center;
+	font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+.nav li {
+	display: inline-block;
+	min-width: 200px;
+	width: 33%;
+	margin: 0;
+	padding: 0;
+}
+
+.nav a {
+	text-align: center;
+	padding: 12px 0 13px 0;
+	margin: 0;
+	color: white;
+	text-decoration: none;
+	display: block;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 20px;
+}
+
+.nav a:hover {
+	background: #af0000;
+	border: none;
+}
+
+ul.nav li:first-child a{
+    border:none;
+}
+ul.nav li:last-child a {
+    border:none;
+}
+
+
 
 /*=======================================================================*/
 /*GROUP BOX - dynamically created*/
@@ -408,6 +453,7 @@ input#create {
 	margin-top: 20px;
 	padding: 10px;
 	border-radius: 10px;
+	overflow-x: hidden;
 }
 #createGroup h1{
 	display: block;

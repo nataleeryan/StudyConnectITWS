@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>StudyConnect - Groups</title>
+	<link rel="icon" href="icon.png">
+	<link rel="stylesheet" type="text/css" href="mainstyle.css">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+</head>
+
+<!--Main landing page, will serve as the login/sign-up page-->
+<body>
+	<div id="page">
+		<!--Header-->
+		<div id="header">
+			<!--Logo-->
+			<a href="home.html">
+			<img src="logo.png" alt="StudyConnect Logo" ></a>
+
+			<!-- Profile and log out form -->
+			<div id="headerForm">
+				<form action="profile.html" class="headerButtons">
+					<a href="profile.html"><button class="btn" type="button">Profile</button></a>
+				</form>
+
+				<form action="index.html" class="headerButtons">
+				<fieldset class="headerButtons">
+					<input type="submit" value="Log Out" id="logout" name="logout"/>
+				</fieldset>
+				</form>
+			</div>
+		</div>
+
+
+		<!--Div to display list of classes-->
+		<div id="classBanner">
+			<!--If numClasses == 0, display this-->
+			<div id="addClassBig" onclick=""><ul class="nav"><li><a href="itws1100.html">ITWS 1100</a></li>
+			<li><a href="biol1010.html">BIOL 1010</a></li>
+			<li><a href="math2010.html">MATH 2010</a></li>
+			</div>
+			<!--If numClasses != 0, display this-->
+				<!--
+					Class selectors will be dyamically created and will display the BIOL 1010 information, they must be dynamically sized as well. The whole banner has a max width of 95% with the (addClassSmall) button active.
+				-->
+				<div class="classSelector" onclick=""></div>
+				<div class="classSelector" onclick=""></div>
+				<div class="classSelector" onclick=""></div>
+
+			<div id="addClassSmall" onclick="" style="display: none;"><h1>+</h1></div>
+		</div>
+
+
+		<!-- Main body of page -->
+		<div id="mainContent-homepage">
+
+			<!-- Displays info about the selected class-->
+			<div id="classDisplay">
+				<h1 id="act-className">BIOL1010</h1>
+				<h3 id="act-classDesc">Introduction to Biology<br>
+        Section 02 </h3>
+
+				<form id="groupSearch">
+					<input type="text" placeholder="Search Groups" id="searchInput" name="searchInput" />
+					<input type="submit" name="searchButton" id="searchButton" value="Search">
+				</form>
+
+				<button class="classBoxButton" onclick="">View Classmates</button>
+				<button class="classBoxButton" onclick="">View Groups Feed</button>
+				<button class="classBoxButton" onclick="">Create New Group</button>
+				<button class="classBoxButton" onclick="">Your Groups</button>
+			</div>
+
+			<!--Displays the groups of selected class-->
+			<div id="groupsDisplay">
+
+				<!--Div to create a group, will show up upon button press-->
+				<div id="createGroup">
+					<h1>Creating a New Group</h1>
+					<h3><br><br>Fill out all fields. Tips for creation: include details of location, time, content and purpose of your group.</h3>
+					<form>
+					<fieldset>
+					<div id="createLeft">
+						<input type="text" placeholder="Group Title" name="createTitle" id="createTitle">
+						<input type="text" placeholder="Meeting Location" name="createLocation" id="createLocation">
+						<input type="text" placeholder="Day of Meeting" name="createDate" id="createDate">
+						<div id="createTime">
+							<input type="text" placeholder="Time START" name="createStart" id="createStart">
+							<select id="startTOD">
+								<option value="AM">AM</option>
+								<option value="PM">PM</option>
+							</select>
+							<input type="text" placeholder="Time END" name="createEnd" id="createEnd">
+							<select id="endTOD">
+								<option value="AM">AM</option>
+								<option value="PM">PM</option>
+							</select>
+						</div>
+						<textarea id="createDesc" name="createDesc" placeholder="Brief Description" maxlength="500" rows="4" cols="50"></textarea>
+					</div>
+
+					<!--Role select and submit button-->
+					<div id="createRight">
+						<div class="radio">
+							<input type="radio" name="createRole" id="createHomework">
+							<div id="studyDiv" >Studying</div>
+						</div>
+
+						<div class="radio">
+							<input type="radio" name="createRole" id="createStudy">
+							<div id="homeDiv" >Homework</div>
+						</div>
+
+						<input type="submit" name="createButton" id="createButton" value="Create Group">
+					</div>
+					</fieldset>
+					</form>
+				</div>
+
+				<!--Filter groups section
+					onclick attributes in each div can be added with JS
+				-->
+				<div id="filterContainer">
+				<h1>Filter Groups</h1>
+				<div id="filterButtons">
+					<div id="fTopL" onclick="">Studying</div>
+					<div id="fTopR" onclick="">Active</div>
+					<div id="fBottomL" onclick="">Homework</div>
+					<div id="fBottomR" onclick="">Upcoming</div>
+				</div>
+				</div>
+
+				<!--Group div-->
+				<!--All group divs will be dynamically created, each peice of the div has a class specific to its role so all will be uniform-->
+				<div class="group">
+					<div class="groupBanner">
+						<h3 class="groupTitle">Studying for Test 2</h3>
+						<h3 class="groupRole">Studying</h3>
+						<p class="groupOwner">Started by StudentName</p>
+					</div>
+
+					<div class="groupDesc">
+						<p>Description example - Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+					</div>
+					<div class="groupFiller"></div>
+					<div class="groupButtons">
+						<button>View Memebers</button>
+						<button>Join Group</button>
+					</div>
+					<div class="groupDate">
+						<p>Location:</p>
+						<p>Time:</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!--Footer same on all pages-->
+		<div id="footer">
+			<ul>
+				<li>ITWS 1100 - Spring 2018 - Natalee Ryan - Will Eiref - Chris Pence</li>
+			</ul>
+		</div>
+	</div>
+</body>
+
+</html>
