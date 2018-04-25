@@ -40,8 +40,10 @@
 			<!--If numClasses == 0, display this-->
 			<div id="addClassBig" onclick=""><h1>CLICK TO ADD COURSES +</h1></div>
 			<div id="addClassBig" ><ul class="nav">
-			<button type ="button1" onclick="groups()"> GROUPS </button>
-			<button type ="button2" onclick="biol()"> BIOL 1010</button>
+			<button type ="button1" onclick="math_groups()"> MATH </button>
+			<button type ="button2" onclick="itws_groups()"> ITWS </button>
+			<button type ="button3" onclick="cs_groups()"> CS </button>
+			<button type ="button3" onclick="all_groups()"> ALL </button>
 <!-- 			<button type ="button3" onclick="math()">MATH 2010</button>
  -->			</div>
 			<!--If numClasses != 0, display this-->
@@ -64,11 +66,12 @@
 				<h1 id="act-className">ITWS 1100</h1>
 				<h3 id="act-classDesc">Intro to Information Technology and Web Science</h3>
 
-				<form id="groupSearch">
-					<input type="text" placeholder="Search Groups" id="searchInput" name="searchInput" />
-					<input type="submit" name="searchButton" id="searchButton" value="Search">
-				</form>
-
+<!-- 				<form id="groupSearch">
+ -->				<div>
+ 					<input type="text" placeholder="Search Groups" id="searchInput" name="searchInput" />
+					<button type="submit" onclick="search();"> Search </button>
+<!-- 				</form>
+ -->				</div>
 				<button class="classBoxButton" onclick="">View Classmates</button>
 				<button class="classBoxButton" onclick="">View Groups Feed</button>
 				<button class="classBoxButton" onclick="">Create New Group</button>
@@ -92,6 +95,7 @@
 							<input type="text" placeholder="Group Title" name="createTitle" id="createTitle">
 							<input type="text" placeholder="Meeting Location" name="createLocation" id="createLocation">
 							<input type="text" placeholder="Day of Meeting" name="createDate" id="createDate">
+							<input type="text" placeholder="Course Type" name="createCourse" id="createCourse">
 <!-- 							<div id="createTime">
 								<input type="text" placeholder="Time START" name="createStart" id="createStart">
 								<select id="startTOD">
@@ -130,7 +134,6 @@
 				<!--Filter groups section
 					onclick attributes in each div can be added with JS
 				-->
-				<div id="button"> </div>
 				<div id="filterContainer">
 				<h1>Filter Groups</h1>
 				<div id="filterButtons">
@@ -143,7 +146,8 @@
 
 				<!--Group div-->
 				<!--All group divs will be dynamically created, each peice of the div has a class specific to its role so all will be uniform-->
-				<div class="group">
+				<div id="button"> </div>
+				<!-- <div class="group">
 					<div class="groupBanner">
 						<h3 class="groupTitle">Studying for Test 2</h3>
 						<h3 class="groupRole">Studying</h3>
@@ -162,7 +166,7 @@
 						<p>Location:</p>
 						<p>Time:</p>
 					</div>
-				</div>
+				</div> -->
 			</div>
 		</div>
 		<!--Footer same on all pages-->

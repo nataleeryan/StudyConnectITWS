@@ -1,14 +1,30 @@
 [
     {
-        "createTitle": "a",
-        "createLocation": "a",
-        "createDate": "a",
-        "createDesc": "a"
+        "createTitle": "A",
+        "createLocation": "B",
+        "createDate": "C",
+        "createCourse": "CS",
+        "createDesc": "yo"
+    },
+    {
+        "createTitle": "Group 1",
+        "createLocation": "Union",
+        "createDate": "tommorow",
+        "createCourse": "MATH",
+        "createDesc": "yo"
     },
     {
         "createTitle": "a",
         "createLocation": "a",
         "createDate": "a",
-        "createDesc": "a"
+        "createCourse": "CS",
+        "createDesc": ""
+    },
+    {
+        "createTitle": "b",
+        "createLocation": "b",
+        "createDate": "b",
+        "createCourse": "MATH",
+        "createDesc": ""
     }
 ]

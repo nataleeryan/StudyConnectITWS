@@ -15,6 +15,7 @@
 		'createTitle'=> $_POST['createTitle'],
 		'createLocation'=> $_POST['createLocation'],
 		'createDate' => $_POST['createDate'],
+		'createCourse' => $_POST['createCourse'],
 		'createDesc' => $_POST['createDesc']
 	   );
 
