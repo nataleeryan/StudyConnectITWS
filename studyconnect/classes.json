@@ -2,16 +2,16 @@
  "classes":
  [
 	 {
-	 	"type": "Biology",
-	 	"description": "Description: Learning how cellular systems work"
-	 },
-	 {
-	 	"type": "Computer Science",
+	 	"type": "itws",
 	 	"description": "Description: Learning how to use computers"
 	 },
 	 {
-	 	"type": "Engineering",
-	 	"description": "Learning how to capitalize on material advancements"
+	 	"type": "biol",
+	 	"description": "Description: Learning how cellular systems work"
+	 },
+	 {
+	 	"type": "math",
+	 	"description": "Learning how to capitalize on abstract concepts"
 	 }
  ]
 

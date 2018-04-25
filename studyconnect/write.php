@@ -6,14 +6,16 @@
 
 
 	*/
-	$myFile = "feed.js";
+	$myFile = "feed.json";
 	 $arr_data = array(); // create empty array
 	 try
 	 {
 	   //Get form data
 	   $formdata = array(
-	      'username'=> $_POST['username'],
-	      'content'=> $_POST['content'],
+		'createTitle'=> $_POST['createTitle'],
+		'createLocation'=> $_POST['createLocation'],
+		'createDate' => $_POST['createDate'],
+		'createDesc' => $_POST['createDesc']
 	   );
 
 	   //Get data from existing json file
