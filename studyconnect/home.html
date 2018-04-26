@@ -40,10 +40,11 @@
 			<!--If numClasses == 0, display this-->
 			<div id="addClassBig" onclick=""><h1>CLICK TO ADD COURSES +</h1></div>
 			<div id="addClassBig" ><ul class="nav">
-			<button type ="button1" onclick="math_groups()"> MATH </button>
-			<button type ="button2" onclick="itws_groups()"> ITWS </button>
-			<button type ="button3" onclick="cs_groups()"> CS </button>
-			<button type ="button3" onclick="all_groups()"> ALL </button>
+			<button type ="button1" onclick="groups_course('MATH')"> MATH </button>
+			<button type ="button2" onclick="groups_course('ITWS')"> ITWS </button>
+			<button type ="button3" onclick="groups_course('CS')"> CS </button>
+			<button type ="button4" onclick="all_groups()"> ALL </button>
+
 <!-- 			<button type ="button3" onclick="math()">MATH 2010</button>
  -->			</div>
 			<!--If numClasses != 0, display this-->
@@ -94,7 +95,7 @@
 						<form action="write.php" method="POST">
 							<input type="text" placeholder="Group Title" name="createTitle" id="createTitle">
 							<input type="text" placeholder="Meeting Location" name="createLocation" id="createLocation">
-							<input type="text" placeholder="Day of Meeting" name="createDate" id="createDate">
+							<input type="date" placeholder="Day of Meeting" name="createDate" id="createDate">
 							<input type="text" placeholder="Course Type" name="createCourse" id="createCourse">
 <!-- 							<div id="createTime">
 								<input type="text" placeholder="Time START" name="createStart" id="createStart">

@@ -1,19 +1,5 @@
-{
- "classes":
- [
-	 {
-	 	"type": "itws",
-	 	"description": "Description: Learning how to use computers"
-	 },
-	 {
-	 	"type": "biol",
-	 	"description": "Description: Learning how cellular systems work"
-	 },
-	 {
-	 	"type": "math",
-	 	"description": "Learning how to capitalize on abstract concepts"
-	 }
- ]
-
-}
-
+[
+	{ "course": "MATH" },
+	{ "course": "ITWS" },
+	{ "course": "CS" }
+]
