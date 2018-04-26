@@ -27,7 +27,15 @@ body{
 	margin-top: 20px;
 	margin-right: 20px;
 	border-radius: 5px;
+	height: 16px;
 }
+
+	input#login{
+	margin-top: 5px;
+	height: 20px;
+	width: 45px;
+}
+
 #signUp{
 	margin: auto;
 	margin-top: 40px;
@@ -134,11 +142,18 @@ input#create {
 #mainLeft{
 	float:left;
 	clear: left;
-	margin-left: 2%;
+	margin-top: 20px;
+	margin-left: 3%;
 	width: 45%;
 	height: 100%;
 	text-align: center;
 }
+
+#mainContent p {
+	font-size: 20px;
+}
+
+
 #mainRight h1 {
 	font-size: 30px;
 }
