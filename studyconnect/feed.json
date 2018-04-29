@@ -33,5 +33,12 @@
         "createDate": "1212-01-12",
         "createCourse": "CS",
         "createDesc": "I am here"
+    },
+    {
+        "createTitle": "Chris",
+        "createLocation": "UNION",
+        "createDate": "2018-04-30",
+        "createCourse": "MATH",
+        "createDesc": "I need help studying for Calc 2"
     }
 ]

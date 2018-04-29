@@ -1,5 +1,26 @@
 // var groupname = "example";
 
+$( document ).ready(function() {
+ $.ajax({
+    type: "GET",
+    url: "classes.json",
+    dataType: "json",
+    success: function(responseData, status){
+      var output = 'ALL OF THEM:' 
+      $.each(responseData, function(i, item) {
+          output += '<button onclick="groups_course(';
+          output += item.course;
+          output += ')">';
+        output += item.course;
+        output += '</button>';
+      });
+      $("#addClassBig").html(output);
+    }, error: function(msg) {
+      alert("There was a problem: " + msg.status + " " + msg.statusText);
+    }
+   });
+ });
+
 function itws(){
 
    $.ajax({
@@ -22,30 +43,6 @@ function itws(){
       }
    });
 }
-function biol(){
-
-   $.ajax({
-      type: "GET",
-      url: "classes.json",
-      dataType: "json",
-      success: function(responseData, status){
-        var output = '';  
-        $.each(responseData.classes, function(i, classes) {
-          if (classes.type == "biol"){
-            output += '<h2>' + classes.type + '</h2>';
-            output += '<p>';
-            output += '<h2>' + classes.description + '</h2>';
-            output += '<p>';
-
-          }
-        });
-        $("#button").html(output);
-      }, error: function(msg) {
-        alert("There was a problem: " + msg.status + " " + msg.statusText);
-      }
-   });
-}
-
 function all_groups(){
 
    $.ajax({
@@ -214,3 +211,5 @@ function groups_course(groupcourse){
       }
    });
 }
+
+
