@@ -27,7 +27,15 @@ body{
 	margin-top: 20px;
 	margin-right: 20px;
 	border-radius: 5px;
+	height: 16px;
 }
+
+	input#login{
+	margin-top: 5px;
+	height: 20px;
+	width: 45px;
+}
+
 #signUp{
 	margin: auto;
 	margin-top: 40px;
@@ -81,7 +89,8 @@ input#create {
 	clear: left;
 }
 #headerForm{ /*Div for header form*/
-	margin: 0 0 0 650px;
+	margin: 0px 0 0 600px;
+	display: inline;
 	color: white;
 	font-weight: 400;
 	height: 100%;
@@ -91,6 +100,22 @@ input#create {
 
 }
 
+#headerForm2{ /*Div for header form*/
+	margin: 0 0 0 490px;
+	display: inline;
+	color: white;
+	font-weight: 400;
+	height: 100%;
+	position: fixed;
+	clear: right;
+	width: 100%;
+
+}
+
+fieldset#f1 {
+	padding-top: 20px;
+}
+
 .inputLogin{
 	font-weight: lighter;
 	display: inline-flex;
@@ -98,6 +123,7 @@ input#create {
 }
 .headerButtons{
 	display: inline;
+	float: inherit;
 }
 
 .btn {
@@ -134,11 +160,18 @@ input#create {
 #mainLeft{
 	float:left;
 	clear: left;
-	margin-left: 2%;
+	margin-top: 20px;
+	margin-left: 3%;
 	width: 45%;
 	height: 100%;
 	text-align: center;
 }
+
+#mainContent p {
+	font-size: 20px;
+}
+
+
 #mainRight h1 {
 	font-size: 30px;
 }
@@ -229,7 +262,7 @@ input#create {
 
 /*Class Box*/
 #classDisplay{
-	background-color: cornsilk;
+	background-color: #e0e0e0;
 	border-radius: 10px;
 	width: 230px;
 	margin-left: 20px;;
@@ -261,6 +294,9 @@ input#create {
 	margin-top: 10px;
 	margin-bottom: 10px;
 	display: block;
+	background-color: #adadad;
+	border-radius: 8px;
+	color: white;
 }
 #groupSearch{
 	width: 80%;
@@ -268,12 +304,18 @@ input#create {
 	margin: auto;
 }
 #searchInput{
-	width: 70%;
+	padding-left: 10px;
+	width: 60%;
 	height: 90%;
 }
 #searchButton{
-	width: 23%;
+	width: 20%;
 	height: 100%;
+}
+
+#searchbar {
+	width: 100%;
+	padding-left: 5%;
 }
 
 
@@ -331,6 +373,7 @@ ul.nav {
 	list-style: none;
 	text-align: center;
 	font-family: 'Source Sans Pro', sans-serif;
+	padding-top: 8px;
 
 }
 
@@ -338,7 +381,7 @@ ul.nav {
 	display: inline-block;
 	min-width: 200px;
 	width: 33%;
-	margin: 0;
+	margin: 0px;
 	padding: 0;
 }
 
@@ -365,7 +408,22 @@ ul.nav li:last-child a {
     border:none;
 }
 
+button[type=button1], button[type=button2], button[type=button3], button[type=button4] {
+	background-color: red;
+	border: none;
+	padding: 8px 20px;
+	font-size: 14px;
+	font-weight: lighter;
+	border-radius: 5px;
+	opacity: 0.7;
+	transition: 0.3s;
+	color: white;
+	margin-left: 10px;
+}
 
+button[type=button1]:hover, button[type=button2]:hover, button[type=button3]:hover, button[type=button4]:hover{
+	opacity: 1;
+}
 
 /*=======================================================================*/
 /*GROUP BOX - dynamically created*/
@@ -452,7 +510,7 @@ ul.nav li:last-child a {
 /*=======================================================================*/
 /*Group Creator*/
 #createGroup{
-	background-color: cornsilk;
+	background-color: #e0e0e0;
 	width: 90%;
 	min-width: 500px;
 	height: 400px;
@@ -513,6 +571,15 @@ ul.nav li:last-child a {
 	clear:left;
 	margin: 20px 0 0 0;
 }
+
+#createCourse {
+	margin:10px 0 0 0;
+}
+
+#submit {
+	height: 20px;
+}
+
 	#createStart{
 		width: 27%;
 		height:100%;
@@ -553,7 +620,21 @@ ul.nav li:last-child a {
 	margin: auto;
 	margin-top: 50px;
 	margin-left: 12%;
+	background-color: red;
+	border: none;
+	padding: 6px 20px;
+	font-size: 14px;
+	font-weight: lighter;
+	border-radius: 5px;
+	color: white;
 }
+
+
+
+
+
+
+
 #studyDiv{
 	background-color: limegreen;
 	width: 60%;

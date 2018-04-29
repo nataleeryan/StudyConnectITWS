@@ -3,9 +3,10 @@
 
 <head>
 	<title>StudyConnect</title>
-	<link rel="icon" href="icon.png">
+	<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
 	<link rel="stylesheet" type="text/css" href="mainstyle.css">
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+	<script src="validateSignUp.js"></script>
 
 </head>
 
@@ -15,11 +16,11 @@
 		<!--Header-->
 		<div id="header">
 			<!--Logo-->
-			<img src="logo.png" alt="StudyConnect Logo" >
+			<img src="logo.png" alt="StudyConnect Logo">
 
 			<!-- Login form -->
-			<div id="headerForm">
-				<form>
+			<div id="headerForm2">
+				<form name="Login" action="home.html" onsubmit="return validateLogin()">
 				<fieldset>
 					<label class="description" for="login-rin">RIN</label>
             		<div class="inputLogin">
@@ -31,7 +32,7 @@
             			<input type="password" size="20" value="" name="login-password" id="login-password"/>
             		</div>
 
-            		<input type="submit" value="login" id="login" name="login"/>
+            		<input type="submit" value="Login" id="login" name="login"/>
 				</fieldset>
 				</form>
 			</div>
@@ -41,11 +42,12 @@
 		<div id="mainContent">
 			<div id="mainLeft">
 
-				
-				<h1>Form Groups, Meet up, STUDY!</h1>
+
+				<h1>Forming a study group has never been <span style="color:red;">easier.</span> </h1>
+				<p>Live feed lets you know of active and upcoming student-organized study sessions.<br></p>
 			</div>
 			<div id="mainRight">
-				<form id="signUp">
+				<form id="signUp" method="post" name="Form" onsubmit="return validateForm();" action="home.html">
 				<h1>Create an account</h1>
 				<fieldset>
 					<label class="description" for="firstName">First Name</label>
@@ -70,7 +72,7 @@
 
             		<label class="description" for="password">Password</label>
             		<div class="inputBox">
-            			<input type="text" size="30" value="" name="password" id="password"/>
+            			<input type="password" size="30" value="" name="password" id="password"/>
             		</div>
 
             		<input type="submit" value="START CONNECTING" id="create" name="create"/>
