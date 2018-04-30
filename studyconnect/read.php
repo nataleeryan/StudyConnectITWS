@@ -12,8 +12,7 @@
 	 {
 	   //Get form data
 	   $formdata = array(
-		'course'=> $_POST['course']
-
+		'course'=> $_POST['course'],
 	   );
 
 	   //Get data from existing json file

@@ -1,101 +1,72 @@
 [
     {
-        "createTitle": "A",
-        "createLocation": "B",
-        "createDate": "C",
-        "createCourse": "CS",
-        "createDesc": "yo"
-    },
-    {
-        "createTitle": "Group 1",
+        "createTitle": "14.3 WebAssign Help",
         "createLocation": "Union",
-        "createDate": "tommorow",
-        "createCourse": "MATH",
-        "createDesc": "yo"
+        "createDate": "2018-04-26",
+        "createCourse": "MATH1020",
+        "createDesc": "Having trouble with one of the questions in 14.3"
     },
     {
-        "createTitle": "a",
-        "createLocation": "a",
-        "createDate": "a",
-        "createCourse": "CS",
-        "createDesc": ""
+        "createTitle": "Studying for final",
+        "createLocation": "Union",
+        "createDate": "2018-05-01",
+        "createCourse": "MATH1020",
+        "createDesc": "We will be studying for the final!"
     },
     {
-        "createTitle": "b",
-        "createLocation": "b",
-        "createDate": "b",
-        "createCourse": "MATH",
-        "createDesc": ""
+        "createTitle": "Teach me to SQL",
+        "createLocation": "Union",
+        "createDate": "2018-04-16",
+        "createCourse": "ITWS1100",
+        "createDesc": "Please help me do this lab im struggling to understand what is going on with SQL"
     },
     {
-        "createTitle": "ya",
-        "createLocation": "ya",
-        "createDate": "1212-01-12",
-        "createCourse": "CS",
-        "createDesc": "I am here"
+        "createTitle": "Quiz 2 Studying",
+        "createLocation": "Lally 102",
+        "createDate": "2018-04-17",
+        "createCourse": "ITWS1100",
+        "createDesc": "Lets study for quiz 2 and prepare! "
     },
     {
-        "createTitle": "Chris",
-        "createLocation": "UNION",
-        "createDate": "2018-04-30",
-        "createCourse": "MATH",
-        "createDesc": "I need help studying for Calc 2"
+        "createTitle": "HW6 RECURSION HELP PLEASE",
+        "createLocation": "Union",
+        "createDate": "2018-03-20",
+        "createCourse": "CSCI1200",
+        "createDesc": "Please help me, I have no idea what I'm doing! I cant get my ships to place right!"
     },
     {
-<<<<<<< HEAD
-        "createTitle": "a",
-        "createLocation": "a",
-        "createDate": "",
-        "createCourse": "MATH",
-        "createDesc": ""
+        "createTitle": "Test 3",
+        "createLocation": "Commons",
+        "createDate": "2018-03-10",
+        "createCourse": "PSYC1200",
+        "createDesc": "Study for test 3 and eat! What could be better?!"
     },
     {
-        "createTitle": "a",
-        "createLocation": "a",
-        "createDate": "",
-        "createCourse": "CS",
-        "createDesc": ""
+        "createTitle": "Quiz 1 Studying",
+        "createLocation": "Lally 102",
+        "createDate": "2018-02-28",
+        "createCourse": "ITWS1100",
+        "createDesc": "Lets study by reviewing our notes from class so far! P.S. Please come prepared to explain the OSI-7 Layer model. And how is it a 3 way handshake there are only 2 parties! :O"
     },
     {
-        "createTitle": "a",
-        "createLocation": "a",
-        "createDate": "",
-        "createCourse": "CS",
-        "createDesc": ""
+        "createTitle": "Study for final",
+        "createLocation": "nowhere",
+        "createDate": "2018-05-01",
+        "createCourse": "ITWS1100",
+        "createDesc": "#BringBackTheFinal"
     },
     {
-        "createTitle": "I am",
-        "createLocation": "here",
-        "createDate": "2018-04-12",
-        "createCourse": "rerer",
-        "createDesc": "yo"
+        "createTitle": "Homework 9 Help",
+        "createLocation": "Library 2rd floor",
+        "createDate": "1028-04-26",
+        "createCourse": "CSCI1200",
+        "createDesc": "Need help with homework 9, just a few questions!"
     },
     {
-        "createTitle": "a",
-        "createLocation": "b",
-        "createDate": "",
-        "createCourse": "rerer",
-        "createDesc": ""
-    },
-    {
-        "createTitle": "ahsdhasdh",
-        "createLocation": "hasdhashdhsa",
-        "createDate": "2018-04-13",
-        "createCourse": "rerer",
-        "createDesc": "aaaaa"
-    },
-    {
-        "createTitle": "",
-        "createLocation": "",
-        "createDate": "",
-        "createCourse": "CS",
-        "createDesc": "yo"
-=======
-        "createTitle": "hi",
-        "createLocation": "",
-        "createDate": "",
-        "createCourse": "",
-        "createDesc": ""
->>>>>>> b769dd16f7945584f7b59ca2040dc54a945168c8
+        "createTitle": "test",
+        "createLocation": "Demonstration",
+        "createDate": "2018-04-20",
+        "createCourse": "MATH1020",
+        "createDesc": "Demonstrate the search feature working! *Not a real group*"
     }
 ]

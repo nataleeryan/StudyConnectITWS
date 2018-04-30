@@ -39,42 +39,6 @@
 		<div id="classBanner">
 			<!--If numClasses == 0, display this-->
 			<div id="addClassBig" onclick=""><h1>CLICK TO ADD COURSES +</h1></div>
-<<<<<<< HEAD
-<!--  				<input type="text" placeholder="Search Groups" id="search_in" name="search_in" />
- -->			<div>
-			<form action="read.php" method="POST">
-				<input type="text" placeholder="Add Classes" id="course" name="course" />
-				<input type="submit" name="submit" id="submit" >
-			</form>
-
-<!-- 			<button type="submit" onclick="classes(addClasses);"> Search </button>
- -->			<div id="button_for_button"></div>
-			</div>
-
-			<div id="addClassBig" > </div><!--<ul class="nav">-->
-			
-<!-- 			<button type ="button1" onclick="groups_course('MATH')"> MATH </button>
-			<button type ="button2" onclick="groups_course('ITWS')"> ITWS </button>
-			<button type ="button3" onclick="groups_course('CS')"> CS </button> -->
-
-			<!-- <div id="addClassBig" onclick=""><h1>CLICK TO ADD COURSES +</h1></div> -->
-			<div id="addClassBig" ><ul class="nav">
-<!-- 			<button type="button1" onclick="groups('MATH')"> MATH </button>
-			<button type="button2" onclick="groups('ITWS')"> ITWS </button>
-			<button type="button3" onclick="groups('CS')"> CS </button> -->
-<!-- 			<button type ="button3" onclick="math()">MATH 2010</button>
- -->			</div>
-=======
->>>>>>> b769dd16f7945584f7b59ca2040dc54a945168c8
-			<!--If numClasses != 0, display this-->
-				<!--
-					Class selectors will be dyamically created and will display the BIOL 1010 information, they must be dynamically sized as well. The whole banner has a max width of 95% with the (addClassSmall) button active.
-				-->
-				<div class="classSelector" onclick=""></div>
-				<div class="classSelector" onclick=""></div>
-				<div class="classSelector" onclick=""></div>
-
-			<div id="addClassSmall" onclick="" style="display: none;"><h1>+</h1></div>
 		</div>
 
 
@@ -83,8 +47,8 @@
 
 			<!-- Displays info about the selected class-->
 			<div id="classDisplay">
-				<h1 id="act-className">GROUP FORUM</h1>
-				<h3 id="act-classDesc">Intro to the new StudyConnection</h3>
+				<h1 id="act-className">ALL CLASSES</h1>
+				<h3 id="act-classDesc">Click a class above or search for one below!</h3>
 
 <!-- 				<form id="groupSearch">
 -->				<div id="searchbar">
@@ -94,7 +58,7 @@
  -->			</div>
 				<!-- <button class="classBoxButton" onclick="">View Classmates</button>
 				<button class="classBoxButton" onclick="">View Groups Feed</button> -->
-				<button class="classBoxButton" onclick="">Create New Group</button>
+				<button class="classBoxButton" onclick="createShow();">Create New Group</button>
 				<button class="classBoxButton" onclick="">Your Groups</button>
 <!-- 				<button id="button" onclick="foo()">click me</button>
  -->
@@ -115,7 +79,12 @@
 							<input type="text" placeholder="Group Title" name="createTitle" id="createTitle">
 							<input type="text" placeholder="Meeting Location" name="createLocation" id="createLocation">
 							<input type="date" placeholder="Day of Meeting" name="createDate" id="createDate">
-							<input type="text" placeholder="Course Type" name="createCourse" id="createCourse">
+							<select name="createCourse" id="createCourse">
+								<option value="ITWS1100">ITWS 1100</option>
+								<option value="MATH1020">MATH 1020</option>
+								<option value="CSCI1200">CSCI 1200</option>
+							</select>
+							<!--<input type="text" placeholder="Course Type" name="createCourse" id="createCourse">-->
 <!-- 							<div id="createTime">
 								<input type="text" placeholder="Time START" name="createStart" id="createStart">
 								<select id="startTOD">
@@ -132,14 +101,7 @@
 							<!-- <input type="submit" name="submit" id="submit" >-->
 <!-- 						</form>
  -->					</div>									
- 						<form action="write.php" method="POST">
-						<form action="write.php" method="POST">
-						<form action="write.php" method="POST">
-						<form action="write.php" method="POST">
-						<form action="write.php" method="POST">
-						<form action="write.php" method="POST">
-						<form action="write.php" method="POST">
-			<form action="write.php" method="POST">
+
 
 
 					<!--Role select and submit button-->

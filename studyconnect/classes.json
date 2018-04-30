@@ -1,42 +1,11 @@
 [
-<<<<<<< HEAD
     {
-        "course": "MATH"
+        "course": "ITWS1100"
     },
     {
-        "course": "ITWS"
+        "course": "MATH1020"
     },
     {
-        "course": "CS"
-    },
-    {
-        "course": "DUDE"
-    },
-    {
-        "course": "a"
-    },
-    {
-        "course": "DUDE"
-    },
-    {
-        "course": "rerer"
-    },
-    {
-        "course": "asdashdasdh"
-    },
-    {
-        "course": "a"
-    },
-    {
-        "course": "a"
-    },
-    {
-        "course": "asdasdasdasd"
+        "course": "CSCI1200"
     }
 ]
-=======
-	{ "course": "MATH" },
-	{ "course": "ITWS" },
-	{ "course": "CS" }
-]	
->>>>>>> b769dd16f7945584f7b59ca2040dc54a945168c8

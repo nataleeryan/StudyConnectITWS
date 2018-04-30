@@ -44,25 +44,25 @@
 
 				<!--Student name-->
 				<div class="profileSection">
-				<h3 id="profileName">Student Name</h3>
+				<h3 id="profileName">Student Name: Chris Pence</h3>
 				</div>
 
 				<!--Major-->
 				<div class="profileSection">
-				<h3>Major</h3>
-				<p id="profileMajor">ITWS</p>
+				<h3>Major: </h3>
+				<p id="profileMajor">CS/ITWS</p>
 				</div>
 
 				<!--Contact info-->
 				<div class="profileSection">
-				<h3>Preferred Contact</h3>
-				<p id="profileEmail">email@rpi.edu</p>
+				<h3>Preferred Contact: </h3>
+				<p id="profileEmail">pencec@rpi.edu</p>
 				</div>
 
 				<!--About student-->
 				<div class="profileSection">
-				<h3>About</h3>
-				<p id="profileAbout">I like studying in the the union with others.</p>
+				<h3>About: </h3>
+				<p id="profileAbout">I like working in the Union with my ITWS group!</p>
 				</div>
 
 			</div>
@@ -70,11 +70,26 @@
 			<div id="profileClasses">
 				<!--Courses Button and header-->
 				<div class="profileSection">
-				<h1>COURSES</h1>
-				<button id="profileClassesEdit">EDIT</button>
+					<h1>ADD COURSES:</h1>
+				</div>
+				<!--Courses with their class feed button, dynamically created using templates here-->
+				<div class="profileClass">
+					<form action="read.php" method="POST" id="profileAdd">
+						<select name="course" id="course">
+							<option value="ITWS1100">ITWS 1100</option>
+							<option value="ITWS2110">ITWS 2110</option>
+							<option value="MATH1010">MATH 1010</option>
+							<option value="MATH1020">MATH 1020</option>
+							<option value="CSCI1100">CSCI 1100</option>
+							<option value="CSCI1200">CSCI 1200</option>
+							<option value="PSYC1200">PSYC 1200</option>
+							<option value="ECON1200">ECON 1200</option>
+						</select>
+						<button class="profileClassButton" type="submit">Add Class</button>
+					</form>		
 				</div>
 
-				<!--Courses with their class feed button, dynamically created using templates here-->
+				<!--
 				<div class="profileClass">
 				<h3>ITWS 1100</h3>
 				<button class="profileClassButton">View Class Feed</button>
@@ -89,6 +104,7 @@
 				<h3>MATH 2010</h3>
 				<button class="profileClassButton">View Class Feed</button>
 				</div>
+				-->
 			</div>
 		</div>
 

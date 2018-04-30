@@ -1,46 +1,31 @@
 <?php  
-	/*
-
-
-	ALL OF THIS CODE IS COPIED FROM THE TUTORIAL
-
-
-	*/
-	$myFile = "feed.json";
-	 $arr_data = array(); // create empty array
-	 try
-	 {
-	   //Get form data
-	   $formdata = array(
+	$file = "feed.json";
+	try
+	{
+		//Get form data
+		$input = array(
 		'createTitle'=> $_POST['createTitle'],
 		'createLocation'=> $_POST['createLocation'],
 		'createDate' => $_POST['createDate'],
 		'createCourse' => $_POST['createCourse'],
 		'createDesc' => $_POST['createDesc']
+		);
 
-	   );
+		//Get current data and merge it with new data
+		$currentJson = file_get_contents($file);
+		$newData = json_decode($currentJson, true);
+	    array_push($newData,$input);
+	   	$currentJson = json_encode($newData, JSON_PRETTY_PRINT);
 
-	   //Get data from existing json file
-	   $jsondata = file_get_contents($myFile);
+	   	//Update old JSON
+		file_put_contents($file, $currentJson);
 
-	   // converts json data into array
-	   $arr_data = json_decode($jsondata, true);
-
-	   // Push user data to array
-	   array_push($arr_data,$formdata);
-
-       //Convert updated array to JSON
-	   $jsondata = json_encode($arr_data, JSON_PRETTY_PRINT);
-	   
-	   //write json data into data.json file
-	   if(file_put_contents($myFile, $jsondata)) {
-	        echo 'Data successfully saved';
-	    }
-	   else 
-	        echo "error";
-
-   }
-   catch (Exception $e) {
-            echo 'Caught exception: ',  $e->getMessage(), "\n";
-   }
+		//Redirect to homepage
+		echo file_get_contents("home.html");
+		die();
+	}
+	catch (Exception $e) 
+	{
+		echo 'There was an error';
+	}
 ?>
