@@ -39,6 +39,7 @@
 		<div id="classBanner">
 			<!--If numClasses == 0, display this-->
 			<div id="addClassBig" onclick=""><h1>CLICK TO ADD COURSES +</h1></div>
+<<<<<<< HEAD
 <!--  				<input type="text" placeholder="Search Groups" id="search_in" name="search_in" />
  -->			<div>
 			<form action="read.php" method="POST">
@@ -63,6 +64,8 @@
 			<button type="button3" onclick="groups('CS')"> CS </button> -->
 <!-- 			<button type ="button3" onclick="math()">MATH 2010</button>
  -->			</div>
+=======
+>>>>>>> b769dd16f7945584f7b59ca2040dc54a945168c8
 			<!--If numClasses != 0, display this-->
 				<!--
 					Class selectors will be dyamically created and will display the BIOL 1010 information, they must be dynamically sized as well. The whole banner has a max width of 95% with the (addClassSmall) button active.
@@ -84,7 +87,7 @@
 				<h3 id="act-classDesc">Intro to the new StudyConnection</h3>
 
 <!-- 				<form id="groupSearch">
--->			<div id="searchbar">
+-->				<div id="searchbar">
  					<input type="text" placeholder="Search Groups" id="searchInput" name="searchInput" />
 					<button type="submit" onclick="search();"> Search </button>
 <!-- 				</form>
@@ -126,7 +129,7 @@
 								</select>
 							</div> -->
 							<textarea id="createDesc" name="createDesc" placeholder="Brief Description" maxlength="500" rows="4" cols="50"></textarea>
-							<input type="submit" name="submit" id="submit" >
+							<!-- <input type="submit" name="submit" id="submit" >-->
 <!-- 						</form>
  -->					</div>									
  						<form action="write.php" method="POST">
@@ -155,7 +158,6 @@
 					</div>
 					</fieldset>
 					</form>
-					<button type ="button4" onclick="all_groups()"> ALL </button>
 				</div>
 
 				<!--Filter groups section

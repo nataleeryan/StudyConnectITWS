@@ -6,14 +6,19 @@ $( document ).ready(function() {
     url: "classes.json",
     dataType: "json",
     success: function(responseData, status){
+<<<<<<< HEAD
       var output = 'All Available Courses ---:  ' 
+=======
+      var output = '';
+>>>>>>> b769dd16f7945584f7b59ca2040dc54a945168c8
       $.each(responseData, function(i, item) {
-          output += '<button onclick="groups_course(';
+          output += '<button type="button4" onclick="groups_course(&#39;';
           output += item.course;
-          output += ')">';
+          output += '&#39;)">';
         output += item.course;
         output += '</button>';
       });
+      output += '<button type="button4" onclick="all_groups()"> ALL </button>';
       $("#addClassBig").html(output);
     }, error: function(msg) {
       alert("There was a problem: " + msg.status + " " + msg.statusText);

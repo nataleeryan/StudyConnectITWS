@@ -42,6 +42,7 @@
         "createDesc": "I need help studying for Calc 2"
     },
     {
+<<<<<<< HEAD
         "createTitle": "a",
         "createLocation": "a",
         "createDate": "",
@@ -89,5 +90,12 @@
         "createDate": "",
         "createCourse": "CS",
         "createDesc": "yo"
+=======
+        "createTitle": "hi",
+        "createLocation": "",
+        "createDate": "",
+        "createCourse": "",
+        "createDesc": ""
+>>>>>>> b769dd16f7945584f7b59ca2040dc54a945168c8
     }
 ]

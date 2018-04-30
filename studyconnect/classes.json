@@ -1,4 +1,5 @@
 [
+<<<<<<< HEAD
     {
         "course": "MATH"
     },
@@ -33,3 +34,9 @@
         "course": "asdasdasdasd"
     }
 ]
+=======
+	{ "course": "MATH" },
+	{ "course": "ITWS" },
+	{ "course": "CS" }
+]	
+>>>>>>> b769dd16f7945584f7b59ca2040dc54a945168c8
