@@ -6,7 +6,7 @@ $( document ).ready(function() {
     url: "classes.json",
     dataType: "json",
     success: function(responseData, status){
-      var output = 'ALL OF THEM:' 
+      var output = 'All Available Courses ---:  ' 
       $.each(responseData, function(i, item) {
           output += '<button onclick="groups_course(';
           output += item.course;
@@ -113,6 +113,42 @@ function search(){
    });
 }
 
+// function classes(){
+//   var value = $("#searchInput").val();
+//   $.ajax({
+//       type: "GET",
+//       url: "feed.json",
+//       dataType: "json",
+//       success: function(responseData, status){
+//         var output = '<ul>';  
+//         $.each(responseData, function(i, item) {
+//           if(item.createTitle == value){
+//             output += '<div class="group">';
+//             output +=  '<div class="groupBanner">';
+//             output += '<h3 class="groupTitle">' + item.createTitle + '</h3>';
+//             output += '<h3 class="groupRole"> @' + item.createLocation + '</h3>';
+//             output += '<p class="groupOwner"> Started at date: ' + item.createDate + '</h3>';
+//             output += '</div>';
+//             output += '<div class="groupDesc">' + item.createDesc + '</div>';
+//             output += '<div class="groupFiller"></div>';
+//             output += '<div class="groupButtons">';
+//             output += '<button>View Memebers</button>';
+//             output += '<button>Join Group</button>';
+//             output += '</div>';
+//             output += '<div class="groupDate">';
+//             output += '<p>Location:</p>';
+//             output += '<p>Time:</p>';
+//             output += '</div>';
+//             output += '</div>';            
+//           }
+//         });
+//         $("#button").html(output);
+//       }, error: function(msg) {
+//         alert("There was a problem: " + msg.status + " " + msg.statusText);
+//       }
+//    });
+// }
+
 // $("#search").click(function(){
 //     $.ajax({
 //         type: "GET",
@@ -141,41 +177,41 @@ function search(){
 //       });
 //   });
 
-// function groups(groupname){
+function groups(groupname){
 
-//    $.ajax({
-//       type: "GET",
-//       url: "feed.json",
-//       dataType: "json",
-//       success: function(responseData, status){
-//         var output = '<ul>';  
-//         $.each(responseData, function(i, item) {
-//           if(item.createTitle == groupname){
-//             output += '<div class="group">';
-//             output +=  '<div class="groupBanner">';
-//             output += '<h3 class="groupTitle">' + item.createTitle + '</h3>';
-//             output += '<h3 class="groupRole"> @' + item.createLocation + '</h3>';
-//             output += '<p class="groupOwner"> Started at date: ' + item.createDate + '</h3>';
-//             output += '</div>';
-//             output += '<div class="groupDesc">' + item.createDesc + '</div>';
-//             output += '<div class="groupFiller"></div>';
-//             output += '<div class="groupButtons">';
-//             output += '<button>View Memebers</button>';
-//             output += '<button>Join Group</button>';
-//             output += '</div>';
-//             output += '<div class="groupDate">';
-//             output += '<p>Location:</p>';
-//             output += '<p>Time:</p>';
-//             output += '</div>';
-//             output += '</div>';            
-//           }
-//         });
-//         $("#button").html(output);
-//       }, error: function(msg) {
-//         alert("There was a problem: " + msg.status + " " + msg.statusText);
-//       }
-//    });
-// }
+   $.ajax({
+      type: "GET",
+      url: "feed.json",
+      dataType: "json",
+      success: function(responseData, status){
+        var output = '<ul>';  
+        $.each(responseData, function(i, item) {
+          if(item.createTitle == groupname){
+            output += '<div class="group">';
+            output +=  '<div class="groupBanner">';
+            output += '<h3 class="groupTitle">' + item.createTitle + '</h3>';
+            output += '<h3 class="groupRole"> @' + item.createLocation + '</h3>';
+            output += '<p class="groupOwner"> Started at date: ' + item.createDate + '</h3>';
+            output += '</div>';
+            output += '<div class="groupDesc">' + item.createDesc + '</div>';
+            output += '<div class="groupFiller"></div>';
+            output += '<div class="groupButtons">';
+            output += '<button>View Memebers</button>';
+            output += '<button>Join Group</button>';
+            output += '</div>';
+            output += '<div class="groupDate">';
+            output += '<p>Location:</p>';
+            output += '<p>Time:</p>';
+            output += '</div>';
+            output += '</div>';            
+          }
+        });
+        $("#button").html(output);
+      }, error: function(msg) {
+        alert("There was a problem: " + msg.status + " " + msg.statusText);
+      }
+   });
+}
 function groups_course(groupcourse){
 
    $.ajax({
@@ -194,7 +230,7 @@ function groups_course(groupcourse){
             output += '</div>';
             output += '<div class="groupDesc">' + item.createDesc + '</div>';
             output += '<div class="groupFiller"></div>';
-            output += '<div class="groupButtons">';
+            output += '<div class="groupButtofunction groups(groupname){}ns">';
             output += '<button>View Memebers</button>';
             output += '<button>Join Group</button>';
             output += '</div>';

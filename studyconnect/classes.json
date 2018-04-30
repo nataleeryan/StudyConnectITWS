@@ -1,6 +1,26 @@
 [
-	{ "course": "MATH" },
-	{ "course": "ITWS" },
-	{ "course": "CS" },
-	{ "course": "DUDE" }
-]	
+    {
+        "course": "MATH"
+    },
+    {
+        "course": "ITWS"
+    },
+    {
+        "course": "CS"
+    },
+    {
+        "course": "DUDE"
+    },
+    {
+        "course": "a"
+    },
+    {
+        "course": "DUDE"
+    },
+    {
+        "course": "rerer"
+    },
+    {
+        "course": "asdashdasdh"
+    }
+]

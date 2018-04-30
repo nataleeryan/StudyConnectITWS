@@ -39,14 +39,18 @@
 		<div id="classBanner">
 			<!--If numClasses == 0, display this-->
 			<div id="addClassBig" onclick=""><h1>CLICK TO ADD COURSES +</h1></div>
+<!--  				<input type="text" placeholder="Search Groups" id="search_in" name="search_in" />
+ -->			<div>
+			<form action="read.php" method="POST">
+				<input type="text" placeholder="Add Classes" id="course" name="course" />
+				<input type="submit" name="submit" id="submit" >
+			</form>
 
-			<div>
-			<input type="text" placeholder="Search Groups" id="addClasses" name="addClasses" />
-			<button type="submit" onclick="classes();"> Search </button>
-			<div id="button_for_button"></div>
+<!-- 			<button type="submit" onclick="classes(addClasses);"> Search </button>
+ -->			<div id="button_for_button"></div>
 			</div>
 
-			<div id="addClassBig" ><!--<ul class="nav">-->
+			<div id="addClassBig" > </div><!--<ul class="nav">-->
 			
 <!-- 			<button type ="button1" onclick="groups_course('MATH')"> MATH </button>
 			<button type ="button2" onclick="groups_course('ITWS')"> ITWS </button>
@@ -54,12 +58,11 @@
 
 			<!-- <div id="addClassBig" onclick=""><h1>CLICK TO ADD COURSES +</h1></div> -->
 			<div id="addClassBig" ><ul class="nav">
-			<button type="button1" onclick="math_groups()"> MATH </button>
-			<button type="button2" onclick="itws_groups()"> ITWS </button>
-			<button type="button3" onclick="cs_groups()"> CS </button>
-			<button type="button3" onclick="all_groups()"> ALL </button>
+			<button type="button1" onclick="groups('MATH')"> MATH </button>
+			<button type="button2" onclick="groups('ITWS')"> ITWS </button>
+			<button type="button3" onclick="groups('CS')"> CS </button>
 <!-- 			<button type ="button3" onclick="math()">MATH 2010</button>
- -->			</div>Search
+ -->			</div>
 			<!--If numClasses != 0, display this-->
 				<!--
 					Class selectors will be dyamically created and will display the BIOL 1010 information, they must be dynamically sized as well. The whole banner has a max width of 95% with the (addClassSmall) button active.
@@ -77,8 +80,8 @@
 
 			<!-- Displays info about the selected class-->
 			<div id="classDisplay">
-				<h1 id="act-className">ITWS 1100</h1>
-				<h3 id="act-classDesc">Intro to Information Technology and Web Science</h3>
+				<h1 id="act-className">GROUP FORUM</h1>
+				<h3 id="act-classDesc">Intro to the new StudyConnection</h3>
 
 <!-- 				<form id="groupSearch">
 -->			<div id="searchbar">
@@ -125,7 +128,16 @@
 							<textarea id="createDesc" name="createDesc" placeholder="Brief Description" maxlength="500" rows="4" cols="50"></textarea>
 							<input type="submit" name="submit" id="submit" >
 <!-- 						</form>
- -->					</div>
+ -->					</div>									
+ 						<form action="write.php" method="POST">
+						<form action="write.php" method="POST">
+						<form action="write.php" method="POST">
+						<form action="write.php" method="POST">
+						<form action="write.php" method="POST">
+						<form action="write.php" method="POST">
+						<form action="write.php" method="POST">
+			<form action="write.php" method="POST">
+
 
 					<!--Role select and submit button-->
 					<div id="createRight">
